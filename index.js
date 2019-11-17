@@ -17,7 +17,7 @@ app.get('api/product/:productId',(req, res) =>{
 
 app.post('/api/product', (req, res) => {
     console.log(req.body)
-    res.status(200).send({message: 'El producto se ha recibido'})
+    res.status(404).send({message: 'El producto no existe'})
 })
 
 app.put('/api/product/:productId', (req, res) => {
