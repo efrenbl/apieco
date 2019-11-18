@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const Schema = moongose.Schema
+const Schema = mongoose.Schema
 
 const ProductSchema = Schema ({
     name: String,
@@ -9,4 +9,4 @@ const ProductSchema = Schema ({
     description: String
 })
 
-moongose.model('Product, ProductSchema')
+module.exports = mongoose.model('Product', ProductSchema)
