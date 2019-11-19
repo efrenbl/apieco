@@ -1,3 +1,5 @@
+
+
 const Product = require('../models/product')
 
 function getProduct (req, res){

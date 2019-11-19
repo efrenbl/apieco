@@ -27,17 +27,18 @@ function decodeToken(token){
             }
 
             resolve(payload.sub)
-
         } catch (err) {
             reject({
                 status: 500,
                 message: 'Invalid Token'
             })
-
         }
     })
 
     return decoded
 }
 
-module.exports = createToken
+module.exports = {
+    createToken,
+    decodeToken
+}
